@@ -1,0 +1,229 @@
+@import 'variables';
+
+// Header
+// __|Navbar
+.navbar {
+    width: 100%;
+    height: var(--nav-h-desk);
+    padding: 0 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// __|__|Logo
+.logo {
+    width: 206px;
+    margin-left: 30px;
+    padding: 0 20px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+// __|__|Actions
+.pc-actions-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.pc-actions-li {
+    padding: 10px;
+
+    & + .pc-actions-li {
+        margin-left: 94px;
+    }
+
+    &:hover .pc-actions-link {
+        color: var(--primary);
+    }
+
+    // Modifier
+    &.active .pc-actions-link {
+        color: var(--primary);
+    }
+}
+
+.pc-actions-link {
+    padding: 10px;
+    line-height: 28px;
+
+    color: var(--text);
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    text-decoration: none;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+// __|__|Menu-btn (Mobile)
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+#is-menubar:checked ~ .overlay {
+    display: block;
+}
+
+#is-menubar:checked ~ .mb-actions {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+// __|__|Overlay
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: fadeIn linear 0.2s;
+}
+
+//  _____________
+.mb-actions {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 320px;
+    max-width: 100%;
+
+    background-color: #fff;
+    z-index: 9999;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all ease-in 0.2s;
+}
+.mb-actions-header {
+    border-bottom: 2px solid var(--divider);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        padding: 20px 16px;
+        color: var(--text);
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    label {
+        width: 20px;
+        border: none;
+        margin-right: 20px;
+
+        display: flex;
+        align-items: center;
+        color: var(--second-text);
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.mb-actions-list {
+    margin-top: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.mb-actions-li {
+    border-bottom: 1px solid var(--divider);
+    padding: 10px 16px;
+
+    cursor: pointer;
+    transition: all 0.25s ease-in-out 0s;
+
+    &:hover {
+        background-color: var(--hover);
+    }
+
+    // Modifier
+    &.active .mb-actions-link {
+        color: var(--primary);
+    }
+
+    .mb-actions-link {
+        width: 100%;
+        line-height: 28px;
+
+        color: var(--text);
+        font-size: 1.6rem;
+        font-weight: 500;
+
+        text-decoration: none;
+        transition: all 0.25s ease-in-out 0s;
+    }
+}
+
+// __|Hero Light 1
+.story-card {
+    overflow: auto;
+    padding-bottom: 146px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(0deg, rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)),
+        url('../assets/img/hero-light1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-content {
+    width: 70%;
+    margin-top: 72px;
+    text-align: center;
+
+    h3 {
+        color: var(--title-text);
+        font-size: 2.4rem;
+        letter-spacing: 0.1px;
+    }
+
+    h1 {
+        margin-top: 7px;
+        padding: 10px 34px;
+        line-height: 80px;
+
+        color: var(--light-text);
+        font-size: 5.8rem;
+        font-weight: 700;
+        font-family: var(--fontFamilyPoppins);
+    }
+
+    h4 {
+        margin-top: 7px;
+        padding: 10px 88px 48px 88px;
+        line-height: 38px;
+
+        color: var(--title-text);
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+}
+
+.group-btn {
+    margin-top: 7px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

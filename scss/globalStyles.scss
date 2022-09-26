@@ -1,0 +1,82 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&display=swap'); // Montserrat
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&display=swap'); // Poppin
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&display=swap'); //Roboto
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    // Handle double img width overflow
+    max-width: 100%;
+    overflow-x: hidden;
+
+    // Scrollbar Vertical
+    overflow-y: overlay;
+
+    font-family: var(--fontFamilyMontserrat);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+// Scrollbar
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+// Button component
+.btn {
+    padding: 16px 60px;
+    font-weight: 700px;
+    font-size: 2.4rem;
+    border-radius: 30px;
+
+    color: var(--light-text);
+    border: 1px solid var(--light-text);
+    background-color: transparent;
+    cursor: pointer;
+
+    & + .btn {
+        margin-left: 34px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    // Modifier
+    &.tiny-btn {
+        padding: 16px 32px;
+    }
+
+    &.tiny-round {
+        border-radius: 10px;
+    }
+
+    &.solid {
+        border: 1px solid var(--primary);
+        background-color: var(--primary);
+    }
+}

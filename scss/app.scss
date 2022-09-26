@@ -1,0 +1,244 @@
+@import 'globalStyles';
+@import 'variables';
+
+// APP Css
+@import 'header';
+@import 'slider';
+@import 'download';
+@import 'footer';
+
+// Responsive
+// Tablet: width >= 740px and with < 1024px
+@media only screen and (max-width: 63.9375em) and (min-width: 46.25em) {
+    // ____Story card
+    .text-content {
+        h1 {
+            font-size: 5rem;
+        }
+
+        h4 {
+            font-size: 2rem;
+        }
+    }
+}
+
+// Mobile & Tablet: with < 1024px
+@media only screen and (max-width: 63.9375em) {
+    // Header
+    // __|Navbar
+    .navbar {
+        height: var(--nav-h-mob);
+        padding: 0 25px;
+
+        .logo {
+            width: 104px;
+            margin: 0;
+            padding: 0;
+        }
+        .pc-actions {
+            display: none;
+        }
+        .menu-btn {
+            display: block;
+        }
+    }
+
+    // __|Story card
+    .text-content {
+        width: 90%;
+    }
+
+    // Slider
+    // __|Top-slider
+    .group-img {
+        margin-bottom: 116px;
+
+        .sld1 {
+            width: 180px;
+        }
+        .sld2 {
+            width: 169px;
+        }
+    }
+
+    .fl-gr {
+        flex-direction: column-reverse;
+
+        .text-desc {
+            margin-top: 0;
+            font-size: 2.4rem;
+        }
+
+        .divider {
+            width: 100%;
+            margin-top: 48px;
+        }
+    }
+
+    // __|Hero-light
+    .hero-light {
+        padding: 0 24px;
+        flex-direction: column-reverse;
+    }
+
+    .img-slider {
+        margin: 40px 0;
+
+        img {
+            margin-left: 0;
+        }
+    }
+
+    .text-group {
+        margin-top: 48px;
+        text-align: center;
+
+        h3 {
+            font-size: 2.4rem;
+        }
+        h2 {
+            margin-top: 30px;
+            padding: 10px;
+            line-height: 57px;
+
+            font-size: 4rem;
+        }
+        h4 {
+            margin-top: 40px;
+            padding: 10px;
+            line-height: 38px;
+
+            font-size: 2.4rem;
+        }
+    }
+
+    // Footer
+    .footer {
+        padding: 36px 0;
+    }
+
+    .footer-wrap {
+        flex-direction: column;
+
+        .logo {
+            display: none;
+        }
+
+        .social-media {
+            margin-left: 0 !important;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 4px;
+            color: var(--second-text);
+        }
+    }
+}
+
+// Mobile: width < 740px
+@media only screen and (max-width: 46.1875em) {
+    // Header
+    // __|Story card
+    .story-card {
+        background-image: unset;
+        background-color: var(--bg);
+    }
+
+    .text-content {
+        width: 100%;
+        margin-top: 50px;
+
+        h3 {
+            color: var(--second-text);
+            font-size: 1.6rem;
+        }
+
+        h1 {
+            padding: 10px;
+            line-height: 42.5px;
+
+            color: var(--text);
+            font-size: 3.6rem;
+        }
+
+        h4 {
+            padding: 10px 34px;
+            line-height: 38px;
+
+            color: var(--second-text);
+            font-size: 2.4rem;
+        }
+    }
+
+    .group-btn {
+        margin-top: 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn {
+            width: 240px;
+            font-size: 2.4rem;
+
+            &.solid {
+                box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.07);
+            }
+        }
+
+        .btn + .btn {
+            margin-left: 0;
+            margin-top: 16px;
+            border: 1px solid var(--primary);
+
+            color: var(--primary);
+        }
+    }
+
+    // Download
+    .download {
+        margin-top: 24px;
+        background-image: unset;
+        background-color: var(--bg-dark);
+    }
+
+    .text-download {
+        width: 80%;
+        margin-top: 120px;
+
+        h2 {
+            padding: 10px;
+            line-height: 57px;
+            font-size: 4rem;
+        }
+
+        h4 {
+            color: var(--light-gray-text);
+        }
+    }
+
+    .group-btn-download {
+        .btn {
+            font-size: 1.6rem;
+        }
+
+        .btn + .btn {
+            margin-left: 16px;
+        }
+    }
+}
+
+// Specific mobile: width < 340px
+@media only screen and (max-width: 21.25em) {
+    .group-btn-download {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        .btn + .btn {
+            margin-left: 0;
+            margin-top: 16px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+:root {
+    --primary: #fa4a0c;
+    --text: #252b42;
+    --light-text: #ffffff;
+    --light-gray-text: #bdbdbd;
+    --title-text: #f6f6f6;
+    --second-text: #737373;
+    --divider: #e4e4e4;
+    --black: #000000;
+    --bg: #fafafa;
+    --bg-dark: var(--text);
+    --hover: var(--light-gray-text);
+
+    // Size
+    --nav-h-desk: 15.6rem;
+    --nav-h-mob: 11.2rem;
+
+    // Fonts family
+    --fontFamilyMontserrat: 'Montserrat', sans-serif;
+    --fontFamilyRoboto: 'Roboto', sans-serif;
+    --fontFamilyPoppins: 'Poppins', sans-serif;
+}

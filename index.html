@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Food delivery app</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/app.css" />
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <!-- Navigation -->
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="/" class="logo-link">
+                            <img src="./assets/img/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                    <nav class="pc-actions">
+                        <ul class="pc-actions-list">
+                            <li class="pc-actions-li active">
+                                <a href="#" class="pc-actions-link">Home</a>
+                            </li>
+                            <li class="pc-actions-li">
+                                <a href="#" class="pc-actions-link">Product</a>
+                            </li>
+                            <li class="pc-actions-li">
+                                <a href="#" class="pc-actions-link">Faq</a>
+                            </li>
+                            <li class="pc-actions-li">
+                                <a href="#" class="pc-actions-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Mobile Menu Btn -->
+                    <label for="is-menubar" class="menu-btn">
+                        <svg
+                            width="20"
+                            height="16"
+                            viewBox="0 0 20 16"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                opacity="0.6"
+                                d="M0.124103 1.33333C0.124103 0.596954 0.721057 0 1.45744 0H18.6667C19.403 0 20 0.596954 20 1.33333C20 2.06971 19.403 2.66667 18.6667 2.66667H1.45744C0.721056 2.66667 0.124103 2.06971 0.124103 1.33333ZM0 8C0 7.26362 0.596954 6.66667 1.33333 6.66667H18.6667C19.403 6.66667 20 7.26362 20 8C20 8.73638 19.403 9.33333 18.6667 9.33333H1.33333C0.596955 9.33333 0 8.73638 0 8ZM0 14.6667C0 13.9303 0.596953 13.3333 1.33333 13.3333H18.6667C19.403 13.3333 20 13.9303 20 14.6667C20 15.403 19.403 16 18.6667 16H1.33333C0.596953 16 0 15.403 0 14.6667Z"
+                                fill="#737373"
+                            />
+                        </svg>
+                    </label>
+
+                    <input type="checkbox" hidden id="is-menubar" />
+
+                    <label for="is-menubar" class="overlay"></label>
+
+                    <nav class="mb-actions">
+                        <div class="mb-actions-header">
+                            <span>Navigate to</span>
+                            <label for="is-menubar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor">
+                                    <path
+                                        d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+                                    />
+                                </svg>
+                            </label>
+                        </div>
+                        <ul class="mb-actions-list">
+                            <li class="mb-actions-li active">
+                                <a href="#" class="mb-actions-link">Home</a>
+                            </li>
+                            <li class="mb-actions-li">
+                                <a href="#" class="mb-actions-link">Product</a>
+                            </li>
+                            <li class="mb-actions-li">
+                                <a href="#" class="mb-actions-link">Faq</a>
+                            </li>
+                            <li class="mb-actions-li">
+                                <a href="#" class="mb-actions-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Story Card -->
+                <div class="story-card">
+                    <div class="text-content">
+                        <h3>Food app</h3>
+                        <h1>Why stay hungry when you can order form Bella Onojie</h1>
+                        <h4>Download the bella oneje's food app now on</h4>
+                    </div>
+                    <div class="group-btn">
+                        <button class="btn solid">Playstore</button>
+                        <button class="btn">App store</button>
+                    </div>
+                </div>
+            </header>
+            <main class="slider">
+                <div class="top-slider">
+                    <div class="group-img">
+                        <img src="./assets/img/sld1.png" alt="sld" class="sld1" />
+                        <img src="./assets/img/sld2.png" alt="sld" class="sld2" />
+                    </div>
+                    <div class="fl-gr">
+                        <div class="divider"></div>
+                        <h3 class="text-desc">How the app works</h3>
+                    </div>
+                </div>
+                <div class="hero-light">
+                    <div class="img-slider">
+                        <img src="./assets/img/hero-light2.png" alt="hero-light2" />
+                    </div>
+                    <div class="text-group">
+                        <h3>Create an account</h3>
+                        <h2>Create/login to an existing account to get started</h2>
+                        <h4>An account is created with your email and a desired password</h4>
+                    </div>
+                </div>
+                <div class="hero-light flex-row-reverse">
+                    <div class="img-slider">
+                        <img src="./assets/img/hero-light3.png" alt="hero-light3" class="ml30p" />
+                    </div>
+                    <div class="text-group">
+                        <h3>Explore varieties</h3>
+                        <h2>Shop for your favorites meal as a dey hot.</h2>
+                        <h4>Shop for your favorite meal or drinks and enjoy while doing it.</h4>
+                    </div>
+                </div>
+                <div class="hero-light">
+                    <div class="img-slider">
+                        <img src="./assets/img/hero-light4.png" alt="hero-light4" />
+                    </div>
+                    <div class="text-group">
+                        <h3>Checkout</h3>
+                        <h2>When you done check out and get it delivered</h2>
+                        <h4>When you done check out and get it delivered with ease</h4>
+                    </div>
+                </div>
+            </main>
+            <div class="download">
+                <div class="text-download">
+                    <h2>Download the app now.</h2>
+                    <h4>Available on your favorite store. Start your preminum experience now</h4>
+                </div>
+                <div class="group-btn-download">
+                    <button class="btn solid tiny-round tiny-btn">Playstore</button>
+                    <button class="btn tiny-round tiny-btn">App store</button>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer-wrap">
+                    <div class="logo">
+                        <a href="/" class="logo-link">
+                            <img src="./assets/img/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                    <div class="social-media">
+                        <div>
+                            <svg
+                                width="35"
+                                height="28"
+                                viewBox="0 0 35 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M34.1449 4.07567C32.9201 4.60402 31.5873 4.98426 30.2144 5.13236C31.6398 4.28555 32.7072 2.94774 33.2163 1.36992C31.8788 2.16559 30.4135 2.72353 28.8855 3.01899C28.2469 2.33625 27.4745 1.79235 26.6165 1.42118C25.7584 1.05001 24.8332 0.859524 23.8983 0.861589C20.1158 0.861589 17.0739 3.92758 17.0739 7.69002C17.0739 8.21836 17.1379 8.74671 17.242 9.25504C11.5783 8.95884 6.52702 6.25309 3.16884 2.1104C2.55694 3.15554 2.23629 4.34555 2.24023 5.55663C2.24023 7.92617 3.44502 10.0155 5.28221 11.2443C4.19952 11.2017 3.14219 10.9041 2.19621 10.3758V10.4598C2.19621 13.778 4.54173 16.5278 7.66776 17.1602C7.08081 17.3126 6.47701 17.3906 5.87059 17.3923C5.4263 17.3923 5.00603 17.3483 4.58175 17.2882C5.44631 19.994 7.96395 21.9593 10.9619 22.0233C8.61637 23.8605 5.67846 24.9412 2.48839 24.9412C1.91602 24.9412 1.38768 24.9212 0.839325 24.8572C3.86529 26.7984 7.45562 27.9191 11.3221 27.9191C23.8743 27.9191 30.7427 17.5204 30.7427 8.49454C30.7427 8.19835 30.7427 7.90216 30.7227 7.60597C32.0516 6.63333 33.2163 5.42855 34.1449 4.07567Z"
+                                    fill="#FA4A0C"
+                                />
+                            </svg>
+                        </div>
+                        <div>
+                            <svg
+                                width="42"
+                                height="42"
+                                viewBox="0 0 42 42"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M36.2103 5.37988H6.7512C6.04274 5.37988 5.47037 5.95225 5.47037 6.66071V36.1198C5.47037 36.8283 6.04274 37.4007 6.7512 37.4007H36.2103C36.9188 37.4007 37.4911 36.8283 37.4911 36.1198V6.66071C37.4911 5.95225 36.9188 5.37988 36.2103 5.37988ZM32.5119 14.7259H29.9543C27.949 14.7259 27.5607 15.6786 27.5607 17.0795V20.1655H32.3478L31.7234 24.9966H27.5607V37.4007H22.5695V25.0006H18.3948V20.1655H22.5695V16.6032C22.5695 12.4685 25.0951 10.215 28.7855 10.215C30.5546 10.215 32.0716 10.3471 32.5159 10.4071V14.7259H32.5119Z"
+                                    fill="#FA4A0C"
+                                />
+                            </svg>
+                        </div>
+                        <div>
+                            <svg
+                                width="39"
+                                height="39"
+                                viewBox="0 0 39 39"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M27.625 3.25H11.375C6.88766 3.25 3.24997 6.88769 3.24997 11.375V27.625C3.24997 32.1123 6.88766 35.75 11.375 35.75H27.625C32.1123 35.75 35.75 32.1123 35.75 27.625V11.375C35.75 6.88769 32.1123 3.25 27.625 3.25Z"
+                                    fill="#FA4A0C"
+                                />
+                                <path
+                                    d="M26.0001 18.4763C26.2007 19.8287 25.9697 21.2099 25.34 22.4234C24.7103 23.6369 23.714 24.621 22.4928 25.2357C21.2715 25.8504 19.8876 26.0643 18.5378 25.8471C17.1879 25.6299 15.941 24.9926 14.9742 24.0259C14.0075 23.0591 13.3702 21.8122 13.153 20.4623C12.9358 19.1125 13.1497 17.7286 13.7644 16.5074C14.3791 15.2861 15.3632 14.2898 16.5767 13.6601C17.7903 13.0305 19.1715 12.7995 20.5239 13C21.9034 13.2046 23.1805 13.8474 24.1666 14.8335C25.1527 15.8196 25.7956 17.0968 26.0001 18.4763Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M28.4375 10.5625H28.4538"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="copyright">Copywright 2020 Bella Onojie.com</span>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="./main.js"></script>
+</html>
