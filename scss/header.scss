@@ -24,7 +24,7 @@
     }
 }
 
-// __|__|Actions
+// __|__|Actions (PC)
 .pc-actions-list {
     display: flex;
     list-style-type: none;
@@ -59,7 +59,7 @@
     transition: all 0.25s ease-in-out 0s;
 }
 
-// __|__|Menu-btn (Mobile)
+// __|__|Menu-btn (Mobile & Tablet)
 .menu-btn {
     display: none;
     cursor: pointer;
@@ -86,7 +86,7 @@
     animation: fadeIn linear 0.2s;
 }
 
-//  _____________
+// __|__|Actions (Mobile)
 .mb-actions {
     position: fixed;
     top: 0;
@@ -102,6 +102,7 @@
     opacity: 0;
     transition: all ease-in 0.2s;
 }
+
 .mb-actions-header {
     border-bottom: 2px solid var(--divider);
     display: flex;
@@ -166,7 +167,7 @@
     }
 }
 
-// __|Hero Light 1
+// __|Story card
 .story-card {
     overflow: auto;
     padding-bottom: 146px;
